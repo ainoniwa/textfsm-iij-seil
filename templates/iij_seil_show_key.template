@@ -1,0 +1,21 @@
+Value distribution_id (\d+\-\d+\-\d+\-\d+\-\d+\-\d+\-\d+\-\d+)
+Value memo (.*)
+Value status (.*)
+Value function (.*)
+Value issued (.*)
+
+Start
+  ^Startup Key: -> Startup
+
+Startup
+  ^\s+Distribution ID\s+: ${distribution_id}
+  ^\s+Memo\s+: ${memo}
+  ^\s+Status\s+: ${status} -> Record
+  ^\s+Function Key(s): -> Function
+
+Function
+  # FIXME: Can not parse "'save-to' command"
+  ^\s+Function\s+: ${function}
+  ^\s+Issued\s+: ${issued}
+  ^\s+Memo\s+: ${memo}
+  ^\s+Status\s+: ${status} -> Record
