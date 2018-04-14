@@ -1,0 +1,17 @@
+Value id (\d+)
+Value type (\S+)
+Value interface (\S+)
+Value protocol (\S+)
+Value private_src (\d+.\d+.\d+.\d+)
+Value private_sport (\d+)
+Value global_src (\d+.\d+.\d+.\d+)
+Value global_sport (\d+)
+Value global_dst (\d+.\d+.\d+.\d+)
+Value global_dport (\d+)
+Value time (\d+:\d+:\d+)
+
+Start
+  ^List of active sessions:.* -> Sessions
+
+Sessions
+  ^\s+${id}:${type}\s+${interface}\s+${protocol}\s+${private_src}:${private_sport}\s+=\s+${global_src}:${global_sport}\s+<->\s+${global_dst}:${global_dport}\s+\[${time}\] -> Record
