@@ -1,0 +1,116 @@
+[
+  {
+    "mac": "C0:3F:D5:45:D5:5E",
+    "interface": "lan1",
+    "ttl": "1097",
+    "address": "192.168.1.12"
+  },
+  {
+    "mac": "BC:5F:F4:AF:6A:7B",
+    "interface": "lan1",
+    "ttl": "1112",
+    "address": "192.168.1.13"
+  },
+  {
+    "mac": "0C:C4:7A:73:57:B0",
+    "interface": "lan1",
+    "ttl": "954",
+    "address": "192.168.1.18"
+  },
+  {
+    "mac": "5A:2A:5F:2F:2A:2E",
+    "interface": "lan1",
+    "ttl": "992",
+    "address": "192.168.1.26"
+  },
+  {
+    "mac": "D0:50:99:27:3F:74",
+    "interface": "lan1",
+    "ttl": "1172",
+    "address": "192.168.1.31"
+  },
+  {
+    "mac": "C6:AC:DB:F2:A0:B6",
+    "interface": "lan1",
+    "ttl": "692",
+    "address": "192.168.1.41"
+  },
+  {
+    "mac": "2A:AA:3B:0A:40:1D",
+    "interface": "lan1",
+    "ttl": "93",
+    "address": "192.168.1.51"
+  },
+  {
+    "mac": "2A:AA:3B:0A:40:1D",
+    "interface": "lan1",
+    "ttl": "1157",
+    "address": "192.168.1.52"
+  },
+  {
+    "mac": "32:26:B3:D3:A2:DD",
+    "interface": "lan1",
+    "ttl": "943",
+    "address": "192.168.1.58"
+  },
+  {
+    "mac": "5A:48:23:C3:44:22",
+    "interface": "lan1",
+    "ttl": "1175",
+    "address": "192.168.1.62"
+  },
+  {
+    "mac": "6E:01:D3:3C:C1:61",
+    "interface": "lan1",
+    "ttl": "1196",
+    "address": "192.168.1.65"
+  },
+  {
+    "mac": "2E:FB:BE:09:BE:F6",
+    "interface": "lan1",
+    "ttl": "93",
+    "address": "192.168.1.66"
+  },
+  {
+    "mac": "BC:5F:F4:FE:47:41",
+    "interface": "lan1",
+    "ttl": "707",
+    "address": "192.168.1.73"
+  },
+  {
+    "mac": "B4:4B:D2:7E:A6:E3",
+    "interface": "lan1",
+    "ttl": "1198",
+    "address": "192.168.1.128"
+  },
+  {
+    "mac": "5C:52:1E:0E:CB:FD",
+    "interface": "lan1",
+    "ttl": "1194",
+    "address": "192.168.1.132"
+  },
+  {
+    "mac": "4C:E1:73:E2:83:18",
+    "interface": "lan1",
+    "ttl": "580",
+    "address": "192.168.1.135"
+  },
+  {
+    "mac": "24:31:84:05:2F:72",
+    "interface": "lan1",
+    "ttl": "418",
+    "address": "192.168.1.152"
+  },
+  {
+    "mac": "9A:75:1B:13:09:A4",
+    "interface": "lan1",
+    "ttl": "675",
+    "address": "192.168.1.153"
+  },
+  {
+    "mac": "58:82:A8:90:DE:BE",
+    "interface": "lan1",
+    "ttl": "1171",
+    "address": "192.168.1.154"
+  }
+]

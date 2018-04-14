@@ -1,0 +1,7 @@
+Value address (\d+\.\d+\.\d+\.\d+)
+Value mac (\S+)
+Value ttl (\d+)
+Value interface (.*)
+
+Start
+  ^${address}\s+at\s+${mac}\s+ttl=${ttl}\s+on\s+${interface} -> Record

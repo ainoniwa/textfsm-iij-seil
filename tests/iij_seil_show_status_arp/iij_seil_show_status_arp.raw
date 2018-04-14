@@ -1,0 +1,20 @@
+# show status arp 
+192.168.1.12 at C0:3F:D5:45:D5:5E ttl=1097 on lan1
+192.168.1.13 at BC:5F:F4:AF:6A:7B ttl=1112 on lan1
+192.168.1.18 at 0C:C4:7A:73:57:B0 ttl=954 on lan1
+192.168.1.26 at 5A:2A:5F:2F:2A:2E ttl=992 on lan1
+192.168.1.31 at D0:50:99:27:3F:74 ttl=1172 on lan1
+192.168.1.41 at C6:AC:DB:F2:A0:B6 ttl=692 on lan1
+192.168.1.51 at 2A:AA:3B:0A:40:1D ttl=93 on lan1
+192.168.1.52 at 2A:AA:3B:0A:40:1D ttl=1157 on lan1
+192.168.1.58 at 32:26:B3:D3:A2:DD ttl=943 on lan1
+192.168.1.62 at 5A:48:23:C3:44:22 ttl=1175 on lan1
+192.168.1.65 at 6E:01:D3:3C:C1:61 ttl=1196 on lan1
+192.168.1.66 at 2E:FB:BE:09:BE:F6 ttl=93 on lan1
+192.168.1.73 at BC:5F:F4:FE:47:41 ttl=707 on lan1
+192.168.1.128 at B4:4B:D2:7E:A6:E3 ttl=1198 on lan1
+192.168.1.132 at 5C:52:1E:0E:CB:FD ttl=1194 on lan1
+192.168.1.135 at 4C:E1:73:E2:83:18 ttl=580 on lan1
+192.168.1.152 at 24:31:84:05:2F:72 ttl=418 on lan1
+192.168.1.153 at 9A:75:1B:13:09:A4 ttl=675 on lan1
+192.168.1.154 at 58:82:A8:90:DE:BE ttl=1171 on lan1
