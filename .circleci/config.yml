@@ -1,0 +1,26 @@
+# Python CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-python/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      # Sse: https://github.com/CircleCI-Public/circleci-dockerfiles/tree/master/python/images
+      - image: python:3.5.5
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - run:
+          name: install dependencies
+          command: |
+            python3 -m venv venv
+            source venv/bin/activate
+            pip install tox
+      - run:
+          name: run tests
+          command: |
+            source venv/bin/activate
+            tox
