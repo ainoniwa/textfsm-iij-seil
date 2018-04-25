@@ -1,0 +1,233 @@
+[
+  {
+    "destination": "default",
+    "flags": "S*",
+    "gateway": "pppoe2",
+    "interface": "pppoe2",
+    "distance": "1"
+  },
+  {
+    "destination": "::1/128",
+    "flags": "C*",
+    "gateway": "loopback",
+    "interface": "loopback",
+    "distance": "0"
+  },
+  {
+    "destination": "2001:c90::/33",
+    "flags": "S*",
+    "gateway": "fe80::212:e2ff:fe70:6e08",
+    "interface": "lan0",
+    "distance": "1"
+  },
+  {
+    "destination": "2400:2410::/30",
+    "flags": "S*",
+    "gateway": "fe80::212:e2ff:fe70:6e08",
+    "interface": "lan0",
+    "distance": "1"
+  },
+  {
+    "destination": "2001:db8:9b18:4800::11/128",
+    "flags": "C*",
+    "gateway": "lan1",
+    "interface": "lan1",
+    "distance": "0"
+  },
+  {
+    "destination": "2001:db8:1d6e:fb00::/64",
+    "flags": "C*",
+    "gateway": "lan1",
+    "interface": "lan1",
+    "distance": "0"
+  },
+  {
+    "destination": "2404:1a8::/32",
+    "flags": "S*",
+    "gateway": "fe80::212:e2ff:fe70:6e08",
+    "interface": "lan0",
+    "distance": "1"
+  },
+  {
+    "destination": "2404:1a8:7e00::/40",
+    "flags": "S*",
+    "gateway": "fe80::212:e2ff:fe70:6e08",
+    "interface": "lan0",
+    "distance": "1"
+  },
+  {
+    "destination": "2408:210::/30",
+    "flags": "S*",
+    "gateway": "fe80::212:e2ff:fe70:6e08",
+    "interface": "lan0",
+    "distance": "1"
+  },
+  {
+    "destination": "2408:210:850b:5700::/64",
+    "flags": "C*",
+    "gateway": "lan0",
+    "interface": "lan0",
+    "distance": "0"
+  },
+  {
+    "destination": "2409:10::/30",
+    "flags": "S*",
+    "gateway": "fe80::212:e2ff:fe70:6e08",
+    "interface": "lan0",
+    "distance": "1"
+  },
+  {
+    "destination": "240b:10::/30",
+    "flags": "S*",
+    "gateway": "fe80::212:e2ff:fe70:6e08",
+    "interface": "lan0",
+    "distance": "1"
+  },
+  {
+    "destination": "fe80::/64",
+    "flags": "C*",
+    "gateway": "pppoe0",
+    "interface": "pppoe0",
+    "distance": "0"
+  },
+  {
+    "destination": "fe80::/64",
+    "flags": "C*",
+    "gateway": "pppoe1",
+    "interface": "pppoe1",
+    "distance": "0"
+  },
+  {
+    "destination": "fe80::/64",
+    "flags": "C*",
+    "gateway": "pppoe2",
+    "interface": "pppoe2",
+    "distance": "0"
+  },
+  {
+    "destination": "fe80::/64",
+    "flags": "C*",
+    "gateway": "loopback",
+    "interface": "loopback",
+    "distance": "0"
+  },
+  {
+    "destination": "fe80::/64",
+    "flags": "C*",
+    "gateway": "lan1",
+    "interface": "lan1",
+    "distance": "0"
+  },
+  {
+    "destination": "fe80::/64",
+    "flags": "C*",
+    "gateway": "lan0",
+    "interface": "lan0",
+    "distance": "0"
+  },
+  {
+    "destination": "fe80::1/128",
+    "flags": "C*",
+    "gateway": "lan1",
+    "interface": "lan1",
+    "distance": "0"
+  },
+  {
+    "destination": "2001:db8:1d6e:fb00::/56",
+    "flags": "M*",
+    "gateway": "::1",
+    "interface": "loopback",
+    "distance": "-"
+  },
+  {
+    "destination": "fe80::/64",
+    "flags": "M*",
+    "gateway": "lan0",
+    "interface": "lan0",
+    "distance": "-"
+  },
+  {
+    "destination": "fe80::/64",
+    "flags": "M*",
+    "gateway": "lan1",
+    "interface": "lan1",
+    "distance": "-"
+  },
+  {
+    "destination": "fe80::/64",
+    "flags": "M*",
+    "gateway": "fe80::1",
+    "interface": "loopback",
+    "distance": "-"
+  },
+  {
+    "destination": "fe80::/64",
+    "flags": "M*",
+    "gateway": "fe80::f8be:e10:acba:c10f",
+    "interface": "pppoe0",
+    "distance": "-"
+  },
+  {
+    "destination": "fe80::/64",
+    "flags": "M*",
+    "gateway": "fe80::f8be:e10:acba:c10f",
+    "interface": "pppoe1",
+    "distance": "-"
+  },
+  {
+    "destination": "fe80::/64",
+    "flags": "M*",
+    "gateway": "fe80::f8be:e10:acba:c10f",
+    "interface": "pppoe2",
+    "distance": "-"
+  },
+  {
+    "destination": "ff01::/32",
+    "flags": "M*",
+    "gateway": "loopback",
+    "interface": "loopback",
+    "distance": "-"
+  },
+  {
+    "destination": "ff02::/32",
+    "flags": "M*",
+    "gateway": "lan0",
+    "interface": "lan0",
+    "distance": "-"
+  },
+  {
+    "destination": "ff02::/32",
+    "flags": "M*",
+    "gateway": "lan1",
+    "interface": "lan1",
+    "distance": "-"
+  },
+  {
+    "destination": "ff02::/32",
+    "flags": "M*",
+    "gateway": "loopback",
+    "interface": "loopback",
+    "distance": "-"
+  },
+  {
+    "destination": "ff02::/32",
+    "flags": "M*",
+    "gateway": "pppoe0",
+    "interface": "pppoe0",
+    "distance": "-"
+  },
+  {
+    "destination": "ff02::/32",
+    "flags": "M*",
+    "gateway": "pppoe1",
+    "interface": "pppoe1",
+    "distance": "-"
+  },
+  {
+    "destination": "ff02::/32",
+    "flags": "M*",
+    "gateway": "pppoe2",
+    "interface": "pppoe2",
+    "distance": "-"
+  }
+]

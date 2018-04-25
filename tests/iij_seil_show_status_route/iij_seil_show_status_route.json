@@ -1,0 +1,86 @@
+[
+  {
+    "destination": "default",
+    "flags": "S*",
+    "gateway": "pppoe0",
+    "interface": "pppoe0",
+    "distance": "1"
+  },
+  {
+    "destination": "127.0.0.0/8",
+    "flags": "C*",
+    "gateway": "loopback",
+    "interface": "loopback",
+    "distance": "0"
+  },
+  {
+    "destination": "153.153.219.226/32",
+    "flags": "C*",
+    "gateway": "pppoe1",
+    "interface": "pppoe1",
+    "distance": "0"
+  },
+  {
+    "destination": "163.139.102.22/32",
+    "flags": "C*",
+    "gateway": "pppoe0",
+    "interface": "pppoe0",
+    "distance": "0"
+  },
+  {
+    "destination": "192.168.1.0/24",
+    "flags": "C*",
+    "gateway": "lan1",
+    "interface": "lan1",
+    "distance": "0"
+  },
+  {
+    "destination": "192.168.1.160/28",
+    "flags": "S*",
+    "gateway": "discard",
+    "interface": "discard",
+    "distance": "16"
+  },
+  {
+    "destination": "192.168.1.161/32",
+    "flags": "M*",
+    "gateway": "127.0.0.1",
+    "interface": "loopback",
+    "distance": "0"
+  },
+  {
+    "destination": "192.168.1.176/28",
+    "flags": "S*",
+    "gateway": "discard",
+    "interface": "discard",
+    "distance": "16"
+  },
+  {
+    "destination": "192.168.1.177/32",
+    "flags": "M*",
+    "gateway": "127.0.0.1",
+    "interface": "loopback",
+    "distance": "0"
+  },
+  {
+    "destination": "192.0.2.222",
+    "flags": "M*",
+    "gateway": "127.0.0.1",
+    "interface": "loopback",
+    "distance": "-"
+  },
+  {
+    "destination": "198.51.100.111",
+    "flags": "M*",
+    "gateway": "127.0.0.1",
+    "interface": "loopback",
+    "distance": "-"
+  },
+  {
+    "destination": "224.0.0.0/4",
+    "flags": "M*",
+    "gateway": "127.0.0.1",
+    "interface": "loopback",
+    "distance": "-"
+  }
+]
