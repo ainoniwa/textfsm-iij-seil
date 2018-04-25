@@ -1,0 +1,15 @@
+Value destination (\S+\/\d+|default)
+Value gateway (\S+)
+Value interface (\S+)
+Value flags (\S+)
+Value distance (\d+|-)
+
+Start
+  ^Destination.* -> Routes
+
+Routes
+  ^${destination}\s+${gateway}\s+${interface}\s+${flags}\s+${distance} -> Record
+  ^${destination}\s+${gateway}
+  ^\s+${interface}\s+${flags}\s+${distance} -> Record
+  ^${destination}
+  ^\s+${gateway}\s+${interface}\s+${flags}\s+${distance} -> Record

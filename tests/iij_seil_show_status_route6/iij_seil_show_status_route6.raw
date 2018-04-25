@@ -1,0 +1,49 @@
+# show status route6
+Flags: C - Connected, M - Miscellaneous, O - OSPFv3, R - RIPng, S - Static
+       * - System route, ! - inconsistent
+
+Destination              Gateway                  Interface Flags  Dist.
+default                  pppoe2                   pppoe2    S*        1 
+::1/128                  loopback                 loopback  C*        0 
+2001:c90::/33            fe80::212:e2ff:fe70:6e08
+                                                  lan0      S*        1 
+2400:2410::/30           fe80::212:e2ff:fe70:6e08
+                                                  lan0      S*        1 
+2001:db8:9b18:4800::11/128
+                         lan1                     lan1      C*        0 
+2001:db8:1d6e:fb00::/64  lan1                     lan1      C*        0
+2404:1a8::/32            fe80::212:e2ff:fe70:6e08
+                                                  lan0      S*        1 
+2404:1a8:7e00::/40       fe80::212:e2ff:fe70:6e08
+                                                  lan0      S*        1 
+2408:210::/30            fe80::212:e2ff:fe70:6e08
+                                                  lan0      S*        1 
+2408:210:850b:5700::/64  lan0                     lan0      C*        0 
+2409:10::/30             fe80::212:e2ff:fe70:6e08
+                                                  lan0      S*        1 
+240b:10::/30             fe80::212:e2ff:fe70:6e08
+                                                  lan0      S*        1 
+fe80::/64                pppoe0                   pppoe0    C*        0 
+fe80::/64                pppoe1                   pppoe1    C*        0 
+fe80::/64                pppoe2                   pppoe2    C*        0 
+fe80::/64                loopback                 loopback  C*        0 
+fe80::/64                lan1                     lan1      C*        0 
+fe80::/64                lan0                     lan0      C*        0 
+fe80::1/128              lan1                     lan1      C*        0 
+2001:db8:1d6e:fb00::/56  ::1                      loopback  M*        -
+fe80::/64                lan0                     lan0      M*        - 
+fe80::/64                lan1                     lan1      M*        - 
+fe80::/64                fe80::1                  loopback  M*        - 
+fe80::/64                fe80::f8be:e10:acba:c10f
+                                                  pppoe0    M*        - 
+fe80::/64                fe80::f8be:e10:acba:c10f
+                                                  pppoe1    M*        - 
+fe80::/64                fe80::f8be:e10:acba:c10f
+                                                  pppoe2    M*        - 
+ff01::/32                loopback                 loopback  M*        - 
+ff02::/32                lan0                     lan0      M*        - 
+ff02::/32                lan1                     lan1      M*        - 
+ff02::/32                loopback                 loopback  M*        - 
+ff02::/32                pppoe0                   pppoe0    M*        - 
+ff02::/32                pppoe1                   pppoe1    M*        - 
+ff02::/32                pppoe2                   pppoe2    M*        - 

@@ -30,5 +30,13 @@ def test_iij_seil_show_status_nat():
     parse_and_diff_correct_dict("iij_seil_show_status_nat")
 
 
+def test_iij_seil_show_status_route():
+    parse_and_diff_correct_dict("iij_seil_show_status_route")
+
+
+def test_iij_seil_show_status_route6():
+    parse_and_diff_correct_dict("iij_seil_show_status_route6")
+
+
 def test_iij_seil_show_key():
     parse_and_diff_correct_dict("iij_seil_show_key")
