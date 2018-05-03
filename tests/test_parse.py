@@ -40,3 +40,7 @@ def test_iij_seil_show_status_route6():
 
 def test_iij_seil_show_key():
     parse_and_diff_correct_dict("iij_seil_show_key")
+
+
+def test_iij_seil_show_users():
+    parse_and_diff_correct_dict("iij_seil_show_users")

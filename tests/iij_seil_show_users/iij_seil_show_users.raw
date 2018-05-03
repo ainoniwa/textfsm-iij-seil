@@ -1,0 +1,6 @@
+# show users
+USER            FROM                                            SINCE
+admin           192.168.122.154                                 05/03 20:11:13
+admin           fe80::ec4:7aff:fe73:57b0%lan1                   05/03 20:12:46
+admin           2400:db8:1d6e:fb00:ec4:7aff:fe73:57b0           05/03 20:12:26
+user            fe80::ec4:7aff:fe73:57b0%lan1                   05/03 20:13:03
