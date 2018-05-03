@@ -1,0 +1,9 @@
+Value username (user|admin)
+Value from (\d+\.\d+\.\d+\.\d+|\S+)
+Value since (.*)
+
+Start
+  ^USER -> User
+
+User
+  ^${username}\s+${from}\s+${since} -> Record
