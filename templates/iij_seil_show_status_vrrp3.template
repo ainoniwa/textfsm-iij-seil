@@ -9,7 +9,7 @@ Value interval (\S+)
 Value preempt (on|off)
 Value delay (\d+)
 Value delay_timer (true|false)
-Value master_router (self|other)
+Value master_router (\S+)
 Value if_state (up|down)
 Value watch (\S+)
 
