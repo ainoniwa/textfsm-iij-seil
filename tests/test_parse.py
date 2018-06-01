@@ -38,6 +38,14 @@ def test_iij_seil_show_status_route6():
     parse_and_diff_correct_dict("iij_seil_show_status_route6")
 
 
+def test_iij_seil_show_status_vrrp():
+    parse_and_diff_correct_dict("iij_seil_show_status_vrrp")
+
+
+def test_iij_seil_show_status_vrrp3():
+    parse_and_diff_correct_dict("iij_seil_show_status_vrrp3")
+
+
 def test_iij_seil_show_key():
     parse_and_diff_correct_dict("iij_seil_show_key")
 

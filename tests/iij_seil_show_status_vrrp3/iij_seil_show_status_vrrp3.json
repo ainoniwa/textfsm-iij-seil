@@ -1,0 +1,21 @@
+[
+  {
+    "watch": "ignore",
+    "if_state": "up",
+    "state": "MASTER",
+    "mac_address": "00:00:5e:00:02:f5",
+    "preempt": "on",
+    "address": [
+      "fe80::1",
+      "2001:db8:9999::1"
+    ],
+    "interval": "1.00",
+    "master_router": "self",
+    "protocol": "IPv6",
+    "priority": "240",
+    "delay": "0",
+    "delay_timer": "false",
+    "interface": "lan1",
+    "vrid": "245"
+  }
+]

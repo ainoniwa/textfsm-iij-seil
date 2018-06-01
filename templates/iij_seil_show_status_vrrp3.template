@@ -1,0 +1,28 @@
+Value interface (\S+)
+Value protocol (\S+)
+Value vrid (\d+)
+Value state (\S+)
+Value List address (\S+)
+Value mac_address (\S+)
+Value priority (\d+)
+Value interval (\S+)
+Value preempt (on|off)
+Value delay (\d+)
+Value delay_timer (true|false)
+Value master_router (self|other)
+Value if_state (up|down)
+Value watch (\S+)
+
+Start
+  ^Interface: ${interface} / ${protocol} / VRID: ${vrid}
+  ^\s+State:\s+${state}
+  ^\s+IP Address:\s+${address}
+  ^\s+Mac Address:\s+${mac_address}
+  ^\s+Priority:\s+${priority}
+  ^\s+Interval:\s+${interval}\s+sec
+  ^\s+Preempt:\s+${preempt}
+  ^\s+Delay:\s+${delay} sec
+  ^\s+Delay Timer:\s+${delay_timer}
+  ^\s+Master Router:\s+${master_router}
+  ^\s+Ifstate:\s+${if_state}
+  ^\s+Watch:\s+${watch} -> Record

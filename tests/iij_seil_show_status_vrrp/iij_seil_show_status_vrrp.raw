@@ -1,0 +1,9 @@
+# show status vrrp
+interface: lan1
+vrid: 1
+        priority: 245
+        state: master
+        address #0: 192.168.1.1/24
+        watch: pppoe0
+        interval: 1 sec
+        preempt: on
