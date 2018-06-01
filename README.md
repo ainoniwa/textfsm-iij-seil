@@ -9,17 +9,19 @@ TextFSM template for IIJ SEIL series
 ## Example
 
 ```
+import json
 import textfsm
 
-with open('tests/iij_seil_show_status_arp/iij_seil_show_status_arp.raw') as f:
+target = "iij_seil_show_status_vrrp"
+
+with open('tests/{s}/{s}.raw'.format(s=target)) as f:
     text = f.read()
 
-with open('templates/iij_seil_show_status_arp.template') as f:
+with open('templates/{s}.template'.format(s=target)) as f:
     t = textfsm.TextFSM(f)
     pt = t.ParseText(text)
     parsed_dict = [dict(zip(t.header, l)) for l in pt]
 
-import json
 print(json.dumps(parsed_dict, indent=2))
 ```
 
