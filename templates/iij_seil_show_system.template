@@ -1,0 +1,36 @@
+Value version (SEIL.*)
+Value arch (\S+)
+Value cpu (.*)
+Value vendor (.*)
+Value serial (.*)
+Value host (.*)
+Value bootdev (.*)
+Value date (\S+ \S+)
+Value uptime (\S+ \S+ \S+)
+Value uptime_since (.*)
+Value users (\d+)
+Value load_1min (\S+)
+Value load_5min (\S+)
+Value load_15min (\S+)
+Value List cpu_stat_used (\S+)
+Value List cpu_stat_interrupts (\S+)
+Value memory_total (\S+)
+Value memory_used (\S+)
+Value memory_used_percent (\S+)
+Value memory_avail (\S+)
+Value memory_avail_percent (\S+)
+
+Start
+  ^${version}\s+
+  ^Arch\s+: ${arch}
+  ^CPU\s+: ${cpu}
+  ^Vendor\s+: ${vendor}
+  ^Serial\s+: ${serial}
+  ^Host\s+: "${host}"
+  ^Bootdev\s+: ${bootdev}
+  ^Date\s+: ${date}
+  ^Up\s+: ${uptime}  \(since ${uptime_since}\)
+  ^Users\s+: ${users} user
+  ^Loadavg\s+: ${load_1min} \(1min\), ${load_5min} \(5min\), ${load_15min} \(15min\)
+  ^CPU\d+ stat\s+: Used ${cpu_stat_used}%, Interrupts ${cpu_stat_interrupts}%
+  ^Memory\s+: Total ${memory_total}, Used ${memory_used} \(${memory_used_percent}%\), Avail ${memory_avail} \(${memory_avail_percent}%\)

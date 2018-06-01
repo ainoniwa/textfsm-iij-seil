@@ -1,0 +1,19 @@
+# show system 
+SEIL/x86 Fuji Ver. 5.91 (Release)
+
+Arch      : SEIL/x86
+
+CPU       : Intel Core Processor (Skylake)
+Vendor    : OEM
+Serial    : (unknown)
+
+Host      : "seil"
+Bootdev   : ld0a
+
+Date      : 2018/04/13 11:52:50 (JST)
+Up        : 36 days 10:59  (since 2018/03/08 00:53:36)
+
+Users     : 1 user
+Loadavg   : 0.06 (1min), 0.01 (5min), 0.00 (15min)
+CPU0 stat : Used 0%, Interrupts 0%
+Memory    : Total 255MB, Used 133MB (52%), Avail 121MB (47%)
