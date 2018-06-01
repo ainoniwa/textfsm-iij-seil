@@ -1,0 +1,29 @@
+[
+  {
+    "load_5min": "0.01",
+    "memory_used": "133MB",
+    "uptime": "36 days 10:59",
+    "bootdev": "ld0a",
+    "load_1min": "0.06",
+    "cpu": "Intel Core Processor (Skylake)",
+    "date": "2018/04/13 11:52:50",
+    "memory_avail_percent": "47",
+    "uptime_since": "2018/03/08 00:53:36",
+    "users": "1",
+    "load_15min": "0.00",
+    "memory_avail": "121MB",
+    "version": "SEIL/x86 Fuji Ver. 5.91",
+    "cpu_stat_interrupts": [
+      "0"
+    ],
+    "memory_total": "255MB",
+    "memory_used_percent": "52",
+    "vendor": "OEM",
+    "cpu_stat_used": [
+      "0"
+    ],
+    "serial": "(unknown)",
+    "arch": "SEIL/x86",
+    "host": "seil"
+  }
+]

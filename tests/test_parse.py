@@ -56,3 +56,7 @@ def test_iij_seil_show_key():
 
 def test_iij_seil_show_users():
     parse_and_diff_correct_dict("iij_seil_show_users")
+
+
+def test_iij_seil_show_system():
+    parse_and_diff_correct_dict("iij_seil_show_system")
