@@ -1,0 +1,12 @@
+[
+  {
+    "address": "192.168.1.1/24",
+    "interface": "lan1",
+    "interval": "1",
+    "preempt": "on",
+    "priority": "245",
+    "state": "master",
+    "vrid": "1",
+    "watch": "pppoe0"
+  }
+]

@@ -1,0 +1,14 @@
+# show status vrrp3 
+Interface: lan1 / IPv6 / VRID: 245
+        State:          MASTER
+        IP Address:     fe80::1
+        IP Address:     2001:db8:9999::1
+        Mac Address:    00:00:5e:00:02:f5
+        Priority:       240
+        Interval:       1.00 sec
+        Preempt:        on
+        Delay:          0 sec
+        Delay Timer:    false
+        Master Router:  self
+        Ifstate:        up
+        Watch:          ignore
