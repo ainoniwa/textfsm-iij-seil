@@ -12,6 +12,7 @@ TextFSM template for IIJ SEIL series
 * `show status arp`
 * `show status function`
 * `show status nat`
+* `show status resolver`
 * `show status route`
 * `show status route6`
 * `show status vrrp`
