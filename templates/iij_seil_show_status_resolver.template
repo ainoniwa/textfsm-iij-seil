@@ -1,0 +1,14 @@
+Value resolver (enable|disable)
+Value List nameserver (\S+)
+Value List domain (\S+)
+
+Start
+  ^resolver ${resolver}
+  ^nameserver -> Nameserver
+
+Nameserver
+  ^\s+${nameserver}
+  ^domain -> Domain
+
+Domain
+  ^\s+${domain}

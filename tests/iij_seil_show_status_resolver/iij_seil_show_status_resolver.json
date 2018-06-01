@@ -1,0 +1,12 @@
+[
+  {
+    "nameserver": [
+      "192.168.1.9",
+      "2001:db8:9b18:4800::9"
+    ],
+    "domain": [
+      "example.com"
+    ],
+    "resolver": "enable"
+  }
+]
