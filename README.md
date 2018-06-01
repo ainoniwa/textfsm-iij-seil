@@ -6,6 +6,19 @@ TextFSM template for IIJ SEIL series
 
 * textfsm
 
+## Support commands
+
+* `show key`
+* `show status arp`
+* `show status function`
+* `show status nat`
+* `show status route`
+* `show status route6`
+* `show status vrrp`
+* `show status vrrp3`
+* `show system`
+* `show users`
+
 ## Example
 
 ```
