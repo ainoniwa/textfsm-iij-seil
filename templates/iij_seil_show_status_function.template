@@ -1,0 +1,9 @@
+Value List function (\S+|\S+ \S+|\S+ \S+ \S+)
+Value List config (Enable|Disable)
+Value List status (Active|Inactive)
+
+Start
+  ^FUNCTION.* -> Function
+
+Function
+  ^${function}\s+${config}\s+${status}\s{0,}

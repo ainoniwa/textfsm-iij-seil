@@ -1,0 +1,27 @@
+# show status function
+FUNCTION                CONFIG          STATUS
+telnet server           Disable         Inactive
+ssh server              Enable          Active  
+web server              Disable         Inactive
+route                   Enable          Active  
+rip agent               Disable         Inactive
+ripng agent             Disable         Inactive
+ospf agent              Disable         Inactive
+ospfv3 agent            Disable         Inactive
+bgp agent               Disable         Inactive
+pim agent               Disable         Inactive
+pim v6 agent            Disable         Inactive
+snmp agent              Enable          Active  
+snmp trap               Disable         Inactive
+dhcp server             Disable         Inactive
+dhcpv6 agent            Enable          Active  
+dns forwarder           Disable         Inactive
+router advertise        Enable          Active  
+NTP                     Enable          Active  
+Access statistics       Disable         Inactive
+mac address filter      Disable         Inactive
+Iperf server            Disable         Inactive
+Iperf v6 server         Disable         Inactive
+vrrpv3 watch agent      Disable         Inactive
+proxyarp                Enable          Active  
+DS-Lite                 Disable         Inactive

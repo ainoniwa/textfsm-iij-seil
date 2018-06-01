@@ -26,6 +26,10 @@ def test_iij_seil_show_status_arp():
     parse_and_diff_correct_dict("iij_seil_show_status_arp")
 
 
+def test_iij_seil_show_status_function():
+    parse_and_diff_correct_dict("iij_seil_show_status_function")
+
+
 def test_iij_seil_show_status_nat():
     parse_and_diff_correct_dict("iij_seil_show_status_nat")
 
