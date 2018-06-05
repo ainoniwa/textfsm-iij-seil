@@ -1,0 +1,23 @@
+# show status filter
+page prenat id TELNET pass out l2 l3 on any proto tcp/udp from %* to any port 23 script STA count 1
+page prenat id DNS pass out l2 l3 on pppoe1 proto tcp/udp from any to any port 53 script TTL,60,STA count 3571410
+page prenat id HTTP pass out l2 l3 on pppoe1 proto tcp from any to any port 80 script STA count 2444816
+page prenat id ICMP1 label "ICMP-Redirect" block out l2 l3 log on pppoe1 proto icmp from any to any icmp-type 5 code any count 0
+page prenat id ICMP pass out l2 l3 on pppoe1 proto icmp from any to any count 202186
+page prenat id DENY_SMB_0 block out l2 l3 log on pppoe0 proto tcp/udp from any to any port 445 count 1
+page prenat id DENY_SMB_1 block out l2 l3 log on pppoe1 proto tcp/udp from any to any port 445 count 0
+page prenat id DYNAMIC_OUT_NTP pass out l2 l3 on pppoe* proto udp from any to any port 123 script STA count 11362
+page prenat id APP_WINNY pass out l2 l3 log on pppoe1 proto any app winny from any to any count 0
+page postnat id ISP_SELECT_0 forward pppoe0 in l3 on lan1 proto any from 192.168.1.0/25 to any count 51370827
+page postnat id ISP_SELECT_1 forward pppoe1 in l3 on lan1 proto any from 192.168.1.128/25 to any count 14452051
+page postnat id DENY_SNMP_0 block in l2 l3 log on pppoe0 proto tcp/udp from any to any port 161-162 count 78
+page postnat id DENY_SNMP_1 block in l2 l3 log on pppoe1 proto tcp/udp from any to any port 161-162 count 70
+page postnat id DENY_TELNET_0 block in l2 l3 log on pppoe0 proto tcp/udp from any to any port 23 count 3643
+page postnat id DENY_TELNET_1 block in l2 l3 log on pppoe1 proto tcp/udp from any to any port 23 count 3426
+page postnat id DHCP block in l2 l3 log on any proto udp from 192.168.3.0/24 to any port 66-68 count 72
+page postnat id IPOPTS label "IP_OPTIONS" pass in l2 l3 log on pppoe1 proto tcp from any to any port 80 opts any count 0
+page dynamic ttl 1477/1500 id HTTPS-007a24f2 pass out l2 l3 on pppoe1 proto tcp from 192.168.10.211 port 65523 to 203.0.113.149 port 443 option accept-icmperr script UPD,TCP count 121832 S=1,SA=0,A=121831,F=0,R=0
+page dynamic ttl 1477/1500 id HTTPS-007a30de pass out l2 l3 on pppoe1 proto tcp from 192.168.10.211 port 65522 to 203.0.113.150 port 443 option accept-icmperr script UPD,TCP count 121676 S=1,SA=0,A=121675,F=0,R=0
+page dynamic ttl 1486/1500 id HTTPS-0080a633 pass out l2 l3 on pppoe1 proto tcp from 192.168.10.212 port 65527 to 203.0.113.105 port 443 option accept-icmperr script UPD,TCP count 98091 S=1,SA=0,A=98090,F=0,R=0
+page dynamic ttl 5/15 id DYNAMIC_OUT_NTP-000afa65 pass out l2 l3 on pppoe0 proto udp from 192.168.1.31 port 123 to 192.0.2.87 port 123 option accept-icmperr script UPD count 1
+page dynamic ttl 5/15 id DYNAMIC_OUT_NTP-000afa65 pass in l2 l3 on pppoe0 proto udp from 192.0.2.87 port 123 to 192.168.1.31 port 123 option accept-icmperr script UPD count 1
