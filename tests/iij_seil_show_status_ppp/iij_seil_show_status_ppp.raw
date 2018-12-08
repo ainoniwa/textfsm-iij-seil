@@ -1,0 +1,125 @@
+# show status ppp
+Interface: pppoe0
+  LCP state: opened
+  IPCP state: opened
+  IPv6CP state: initial
+  BCP state: initial
+  LCP negotiated options:
+        magic number 0xdb32dbe
+  IPCP negotiated options:
+        address 192.0.2.101
+        primary dns address 192.0.2.7
+        secondary dns address 192.0.2.8
+  IPv6CP negotiated options:
+        none
+  BCP negotiated options:
+        none
+  keepalive: 10 seconds interval
+
+Interface: pppoe1
+  LCP state: opened
+  IPCP state: opened
+  IPv6CP state: initial
+  BCP state: initial
+  LCP negotiated options:
+        magic number 0xf05831e4
+  IPCP negotiated options:
+        address 198.51.100.11
+        primary dns address 198.51.100.125
+        secondary dns address 198.51.100.245
+  IPv6CP negotiated options:
+        none
+  BCP negotiated options:
+        none
+  keepalive: 10 seconds interval
+
+Interface: pppoe2
+  LCP state: opened
+  IPCP state: initial
+  IPv6CP state: opened
+  BCP state: initial
+  LCP negotiated options:
+        magic number 0x365e57e9
+  IPCP negotiated options:
+        none
+  IPv6CP negotiated options:
+        ifid: my_ifid=0xaaaa0e10acdddd0f, his_ifid=0xdddd1a0002a4eacc
+  BCP negotiated options:
+        none
+  keepalive: 10 seconds interval
+
+Interface: pppoe3
+  LCP state: initial
+  IPCP state: initial
+  IPv6CP state: initial
+  BCP state: initial
+  LCP negotiated options:
+        none
+  IPCP negotiated options:
+        none
+  IPv6CP negotiated options:
+        none
+  BCP negotiated options:
+        none
+  keepalive: disabled
+
+Interface: pppoe4
+  LCP state: initial
+  IPCP state: initial
+  IPv6CP state: initial
+  BCP state: initial
+  LCP negotiated options:
+        none
+  IPCP negotiated options:
+        none
+  IPv6CP negotiated options:
+        none
+  BCP negotiated options:
+        none
+  keepalive: disabled
+
+Interface: pppoe5
+  LCP state: initial
+  IPCP state: initial
+  IPv6CP state: initial
+  BCP state: initial
+  LCP negotiated options:
+        none
+  IPCP negotiated options:
+        none
+  IPv6CP negotiated options:
+        none
+  BCP negotiated options:
+        none
+  keepalive: disabled
+
+Interface: pppoe6
+  LCP state: initial
+  IPCP state: initial
+  IPv6CP state: initial
+  BCP state: initial
+  LCP negotiated options:
+        none
+  IPCP negotiated options:
+        none
+  IPv6CP negotiated options:
+        none
+  BCP negotiated options:
+        none
+  keepalive: disabled
+
+Interface: pppoe7
+  LCP state: initial
+  IPCP state: initial
+  IPv6CP state: initial
+  BCP state: initial
+  LCP negotiated options:
+        none
+  IPCP negotiated options:
+        none
+  IPv6CP negotiated options:
+        none
+  BCP negotiated options:
+        none
+  keepalive: disabled
+

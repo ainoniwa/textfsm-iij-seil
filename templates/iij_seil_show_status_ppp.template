@@ -1,0 +1,31 @@
+Value interface (\S+)
+Value lcp_state (\S+)
+Value ipcp_state (\S+)
+Value ipv6cp_state (\S+)
+Value bcp_state (\S+)
+Value lcp_magic (\S+)
+Value ipcp_address (\S+)
+Value ipcp_primary_dns (\S+)
+Value ipcp_secondary_dns (\S+)
+Value ipv6cp_my_ifid (\S+)
+Value ipv6cp_his_ifid (\S+)
+Value keepalive (disabled)
+Value keepalive_seconds (\d+)
+
+Start
+  ^Interface:\s+${interface}
+  ^\s+LCP state: ${lcp_state}
+  ^\s+IPCP state: ${ipcp_state}
+  ^\s+IPv6CP state: ${ipv6cp_state}
+  ^\s+BCP state: ${bcp_state}
+  ^\s+LCP negotiated options:
+  ^\s+magic number ${lcp_magic} -> Continue
+  ^\s+IPCP negotiated options:
+  ^\s+address ${ipcp_address} -> Continue
+  ^\s+primary dns address ${ipcp_primary_dns} -> Continue
+  ^\s+secondary dns address ${ipcp_secondary_dns} -> Continue
+  ^\s+IPv6CP negotiated options:
+  ^\s+ifid: my_ifid=${ipv6cp_my_ifid}, his_ifid=${ipv6cp_his_ifid} -> Continue
+  ^\s+BCP negotiated options:
+  ^\s+keepalive: ${keepalive} -> Continue.Record
+  ^\s+keepalive: ${keepalive_seconds} seconds interval -> Record
