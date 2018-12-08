@@ -1,0 +1,13 @@
+Value address (\S+)
+Value mac (\S+)
+Value interface (\S+)
+Value expire (\S+)
+Value status (\S+)
+Value flags (\S+)
+Value probes (\S+)
+
+Start
+  ^Neighbor.* -> Neighbor
+
+Neighbor
+  ^${address}\s+${mac}\s+${interface}\s+${expire}\s+${status}([ ]{1,2}${flags}|)([ ]+${probes}|) -> Record

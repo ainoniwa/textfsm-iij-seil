@@ -1,0 +1,128 @@
+[
+  {
+    "flags": "",
+    "address": "2001:db8:9b18:4800::1",
+    "status": "R",
+    "mac": "46:6d:2c:8b:f0:e3",
+    "interface": "lan1",
+    "expire": "permanent",
+    "probes": ""
+  },
+  {
+    "flags": "",
+    "address": "2001:db8:1d6e:fb00::",
+    "status": "R",
+    "mac": "46:6d:2c:8b:f0:e3",
+    "interface": "lan1",
+    "expire": "permanent",
+    "probes": ""
+  },
+  {
+    "flags": "",
+    "address": "2001:db8:1d6e:fb00::2",
+    "status": "R",
+    "mac": "46:6d:2c:8b:f0:e3",
+    "interface": "lan1",
+    "expire": "permanent",
+    "probes": ""
+  },
+  {
+    "flags": "",
+    "address": "2001:db8:1d6e:fb00:1467:bdd:92",
+    "status": "S",
+    "mac": "24:31:84:5:2f:72",
+    "interface": "lan1",
+    "expire": "20h44m34s",
+    "probes": ""
+  },
+  {
+    "flags": "",
+    "address": "2001:db8:1d6e:fb00:2593:a114:f",
+    "status": "S",
+    "mac": "58:82:a8:90:de:be",
+    "interface": "lan1",
+    "expire": "2h36m7s",
+    "probes": ""
+  },
+  {
+    "flags": "",
+    "address": "2001:db8:1d6e:fb00:359e:589b:3",
+    "status": "R",
+    "mac": "58:82:a8:90:de:be",
+    "interface": "lan1",
+    "expire": "3s",
+    "probes": ""
+  },
+  {
+    "flags": "R",
+    "address": "fe80::212:e2ff:fe70:6e08%lan0",
+    "status": "S",
+    "mac": "0:12:e2:70:6e:8",
+    "interface": "lan0",
+    "expire": "13h34m37s",
+    "probes": ""
+  },
+  {
+    "flags": "",
+    "address": "fe80::902f:4eff:fe42:4c23%lan0",
+    "status": "R",
+    "mac": "92:2f:4e:42:4c:23",
+    "interface": "lan0",
+    "expire": "permanent",
+    "probes": ""
+  },
+  {
+    "flags": "",
+    "address": "fe80::1%lan1",
+    "status": "R",
+    "mac": "46:6d:2c:8b:f0:e3",
+    "interface": "lan1",
+    "expire": "permanent",
+    "probes": ""
+  },
+  {
+    "flags": "",
+    "address": "fe80::f076:a5ff:fedb:e2e6%lan1",
+    "status": "S",
+    "mac": "f2:76:a5:db:e2:e6",
+    "interface": "lan1",
+    "expire": "23h55m58s",
+    "probes": ""
+  },
+  {
+    "flags": "",
+    "address": "fe80::1%lo0",
+    "status": "R",
+    "mac": "(incomplete)",
+    "interface": "(null)",
+    "expire": "permanent",
+    "probes": ""
+  },
+  {
+    "flags": "",
+    "address": "fe80::f8be:e10:acba:c10f%pppoe0",
+    "status": "R",
+    "mac": "(incomplete)",
+    "interface": "pppoe0",
+    "expire": "permanent",
+    "probes": ""
+  },
+  {
+    "flags": "",
+    "address": "fe80::f8be:e10:acba:c10f%pppoe1",
+    "status": "R",
+    "mac": "(incomplete)",
+    "interface": "pppoe1",
+    "expire": "permanent",
+    "probes": ""
+  },
+  {
+    "flags": "",
+    "address": "fe80::f8be:e10:acba:c10f%pppoe2",
+    "status": "R",
+    "mac": "(incomplete)",
+    "interface": "pppoe2",
+    "expire": "permanent",
+    "probes": ""
+  }
+]

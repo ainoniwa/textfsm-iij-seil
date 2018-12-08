@@ -1,0 +1,16 @@
+# show status ndp
+Neighbor                        Linklayer Address  Netif Expire    St Flgs Prbs
+2001:db8:9b18:4800::1           46:6d:2c:8b:f0:e3   lan1 permanent R
+2001:db8:1d6e:fb00::            46:6d:2c:8b:f0:e3   lan1 permanent R
+2001:db8:1d6e:fb00::2           46:6d:2c:8b:f0:e3   lan1 permanent R
+2001:db8:1d6e:fb00:1467:bdd:92  24:31:84:5:2f:72    lan1 20h44m34s S
+2001:db8:1d6e:fb00:2593:a114:f  58:82:a8:90:de:be   lan1 2h36m7s   S
+2001:db8:1d6e:fb00:359e:589b:3  58:82:a8:90:de:be   lan1 3s        R
+fe80::212:e2ff:fe70:6e08%lan0   0:12:e2:70:6e:8     lan0 13h34m37s S  R
+fe80::902f:4eff:fe42:4c23%lan0  92:2f:4e:42:4c:23   lan0 permanent R
+fe80::1%lan1                    46:6d:2c:8b:f0:e3   lan1 permanent R
+fe80::f076:a5ff:fedb:e2e6%lan1  f2:76:a5:db:e2:e6   lan1 23h55m58s S
+fe80::1%lo0                     (incomplete)      (null) permanent R
+fe80::f8be:e10:acba:c10f%pppoe0 (incomplete)      pppoe0 permanent R
+fe80::f8be:e10:acba:c10f%pppoe1 (incomplete)      pppoe1 permanent R
+fe80::f8be:e10:acba:c10f%pppoe2 (incomplete)      pppoe2 permanent R

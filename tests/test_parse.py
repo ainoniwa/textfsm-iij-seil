@@ -38,6 +38,10 @@ def test_iij_seil_show_status_nat():
     parse_and_diff_correct_dict("iij_seil_show_status_nat")
 
 
+def test_iij_seil_show_status_ndp():
+    parse_and_diff_correct_dict("iij_seil_show_status_ndp")
+
+
 def test_iij_seil_show_status_ppp():
     parse_and_diff_correct_dict("iij_seil_show_status_ppp")
 
