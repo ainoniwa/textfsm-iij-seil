@@ -1,0 +1,32 @@
+# show status dhcp6 
+========================================
+DHCPv6 client: running
+
+----------------------------------------
+Interface:          pppoe2
+State:              renewing
+
+Client DUID:        00:03:00:01:92:2f:4e:42:4c:23
+Server DUID:        00:03:00:01:00:3a:7d:0b:92:00
+Server Preference:  0
+
+Delegated Prefix:   2001:db8:1d6e:fb00::/56
+    preferred lifetime:      14400
+    valid lifetime:          14400
+    time to renew  (T1):      7200
+    time to rebind (T2):     11520
+
+DNS Servers:        2001:db8:0:4::4
+                    2001:db8:0:104::4
+
+Last Updated:       2018/04/13 09:47:11
+
+
+========================================
+DHCPv6 server: not running
+
+
+========================================
+DHCPv6 relay: not running
+
+

@@ -26,6 +26,10 @@ def test_iij_seil_show_status_arp():
     parse_and_diff_correct_dict("iij_seil_show_status_arp")
 
 
+def test_iij_seil_show_status_dhcp6():
+    parse_and_diff_correct_dict("iij_seil_show_status_dhcp6")
+
+
 def test_iij_seil_show_status_filter():
     parse_and_diff_correct_dict("iij_seil_show_status_filter")
 

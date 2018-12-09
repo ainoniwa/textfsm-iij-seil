@@ -1,0 +1,56 @@
+[
+  {
+    "dhcp_relay_status": "",
+    "dhcp_server_status": "",
+    "time_to_renew": "7200",
+    "valid_lifetime": "14400",
+    "interface": "pppoe2",
+    "dhcp_client_status": "running",
+    "preferred_lifetime": "14400",
+    "delegated_prefix": "2001:db8:1d6e:fb00::/56",
+    "last_updated": "2018/04/13 09:47:11",
+    "dns_servers": [
+      "2001:db8:0:4::4",
+      "2001:db8:0:104::4"
+    ],
+    "time_to_rebind": "11520",
+    "client_duid": "00:03:00:01:92:2f:4e:42:4c:23",
+    "state": "renewing",
+    "server_duid": "00:03:00:01:00:3a:7d:0b:92:00",
+    "server_preference": "0"
+  },
+  {
+    "dhcp_relay_status": "",
+    "dhcp_server_status": "not running",
+    "time_to_renew": "",
+    "valid_lifetime": "",
+    "interface": "",
+    "dhcp_client_status": "",
+    "preferred_lifetime": "",
+    "delegated_prefix": "",
+    "last_updated": "",
+    "dns_servers": [],
+    "time_to_rebind": "",
+    "client_duid": "",
+    "state": "",
+    "server_duid": "",
+    "server_preference": ""
+  },
+  {
+    "dhcp_relay_status": "not running",
+    "dhcp_server_status": "",
+    "time_to_renew": "",
+    "valid_lifetime": "",
+    "interface": "",
+    "dhcp_client_status": "",
+    "preferred_lifetime": "",
+    "delegated_prefix": "",
+    "last_updated": "",
+    "dns_servers": [],
+    "time_to_rebind": "",
+    "client_duid": "",
+    "state": "",
+    "server_duid": "",
+    "server_preference": ""
+  }
+]

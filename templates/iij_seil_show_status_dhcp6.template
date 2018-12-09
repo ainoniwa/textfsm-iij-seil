@@ -1,0 +1,41 @@
+Value dhcp_client_status (.*)
+Value dhcp_server_status (.*)
+Value dhcp_relay_status (.*)
+Value interface (\S+)
+Value state (\S+)
+Value client_duid (\S+)
+Value server_duid (\S+)
+Value server_preference (\S+)
+Value delegated_prefix (\S+)
+Value preferred_lifetime (\d+)
+Value valid_lifetime (\d+)
+Value time_to_renew (\d+)
+Value time_to_rebind (\d+)
+Value List dns_servers (\S+)
+Value last_updated (.*)
+
+Start
+  ^DHCPv6 client: ${dhcp_client_status} -> Client
+  ^DHCPv6 server: ${dhcp_server_status} -> Server
+  ^DHCPv6 relay: ${dhcp_relay_status} -> Relay
+
+Client
+  ^Interface:\s+${interface}
+  ^State:\s+${state}
+  ^Client DUID:\s+${client_duid}
+  ^Server DUID:\s+${server_duid}
+  ^Server Preference:\s+${server_preference}
+  ^Delegated Prefix:\s+${delegated_prefix}
+  ^\s+preferred lifetime:\s+${preferred_lifetime}
+  ^\s+valid lifetime:\s+${valid_lifetime}
+  ^\s+time to renew\s+\(T1\):\s+${time_to_renew}
+  ^\s+time to rebind\s+\(T2\):\s+${time_to_rebind}
+  ^DNS Servers:\s+${dns_servers}
+  ^\s+${dns_servers}
+  ^Last Updated:\s+${last_updated} -> Record Start
+
+Server
+  ^ -> Record Start
+
+Relay
+  ^ -> Record Start
