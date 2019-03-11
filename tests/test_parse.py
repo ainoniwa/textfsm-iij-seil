@@ -4,9 +4,30 @@
 import os
 import json
 import textfsm
+import pytest
 
 
-def parse_and_diff_correct_dict(target):
+@pytest.mark.parametrize(
+    "target",
+    [
+        "iij_seil_show_status_arp",
+        "iij_seil_show_status_dhcp6",
+        "iij_seil_show_status_filter",
+        "iij_seil_show_status_function",
+        "iij_seil_show_status_nat",
+        "iij_seil_show_status_ndp",
+        "iij_seil_show_status_ppp",
+        "iij_seil_show_status_resolver",
+        "iij_seil_show_status_route",
+        "iij_seil_show_status_route6",
+        "iij_seil_show_status_vrrp",
+        "iij_seil_show_status_vrrp3",
+        "iij_seil_show_key",
+        "iij_seil_show_users",
+        "iij_seil_show_system",
+    ]
+)
+def test_parse(target):
     base = os.path.dirname(os.path.abspath(__file__))
     text_path = os.path.normpath(os.path.join(base, '{s}/{s}.raw'.format(s=target)))
     correct_path = os.path.normpath(os.path.join(base, '{s}/{s}.json'.format(s=target)))
@@ -20,63 +41,3 @@ def parse_and_diff_correct_dict(target):
         parsed_dict = [dict(zip(t.header, l)) for l in pt]
         correct_dict = json.load(open(correct_path))
         assert parsed_dict == correct_dict
-
-
-def test_iij_seil_show_status_arp():
-    parse_and_diff_correct_dict("iij_seil_show_status_arp")
-
-
-def test_iij_seil_show_status_dhcp6():
-    parse_and_diff_correct_dict("iij_seil_show_status_dhcp6")
-
-
-def test_iij_seil_show_status_filter():
-    parse_and_diff_correct_dict("iij_seil_show_status_filter")
-
-
-def test_iij_seil_show_status_function():
-    parse_and_diff_correct_dict("iij_seil_show_status_function")
-
-
-def test_iij_seil_show_status_nat():
-    parse_and_diff_correct_dict("iij_seil_show_status_nat")
-
-
-def test_iij_seil_show_status_ndp():
-    parse_and_diff_correct_dict("iij_seil_show_status_ndp")
-
-
-def test_iij_seil_show_status_ppp():
-    parse_and_diff_correct_dict("iij_seil_show_status_ppp")
-
-
-def test_iij_seil_show_status_resolver():
-    parse_and_diff_correct_dict("iij_seil_show_status_resolver")
-
-
-def test_iij_seil_show_status_route():
-    parse_and_diff_correct_dict("iij_seil_show_status_route")
-
-
-def test_iij_seil_show_status_route6():
-    parse_and_diff_correct_dict("iij_seil_show_status_route6")
-
-
-def test_iij_seil_show_status_vrrp():
-    parse_and_diff_correct_dict("iij_seil_show_status_vrrp")
-
-
-def test_iij_seil_show_status_vrrp3():
-    parse_and_diff_correct_dict("iij_seil_show_status_vrrp3")
-
-
-def test_iij_seil_show_key():
-    parse_and_diff_correct_dict("iij_seil_show_key")
-
-
-def test_iij_seil_show_users():
-    parse_and_diff_correct_dict("iij_seil_show_users")
-
-
-def test_iij_seil_show_system():
-    parse_and_diff_correct_dict("iij_seil_show_system")
