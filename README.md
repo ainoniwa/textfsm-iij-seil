@@ -1,5 +1,7 @@
 # textfsm-iij-seil
 
+[![CircleCI](https://circleci.com/gh/ainoniwa/textfsm-iij-seil.svg?style=shield)](https://circleci.com/gh/ainoniwa/textfsm-iij-seil)
+
 TextFSM template for IIJ SEIL series
 
 ## Requirements
