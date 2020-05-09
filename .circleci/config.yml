@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # Sse: https://github.com/CircleCI-Public/circleci-dockerfiles/tree/master/python/images
-      - image: python:3.5.5
+      - image: python:3.6.10
 
     working_directory: ~/repo
 

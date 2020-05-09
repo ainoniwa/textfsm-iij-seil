@@ -1,43 +1,42 @@
 #!/usr/bin/env python
-# coding=utf-8
-
-import os
 import json
-import textfsm
 import pytest
+from pathlib import Path
+from textfsm.clitable import CliTable
 
 
 @pytest.mark.parametrize(
-    "target",
+    "command, dataname",
     [
-        "iij_seil_show_status_arp",
-        "iij_seil_show_status_dhcp6",
-        "iij_seil_show_status_filter",
-        "iij_seil_show_status_function",
-        "iij_seil_show_status_nat",
-        "iij_seil_show_status_ndp",
-        "iij_seil_show_status_ppp",
-        "iij_seil_show_status_resolver",
-        "iij_seil_show_status_route",
-        "iij_seil_show_status_route6",
-        "iij_seil_show_status_vrrp",
-        "iij_seil_show_status_vrrp3",
-        "iij_seil_show_key",
-        "iij_seil_show_users",
-        "iij_seil_show_system",
+        ["show status arp", "iij_seil_show_status_arp"],
+        ["show status dhcp6", "iij_seil_show_status_dhcp6"],
+        ["show status filter", "iij_seil_show_status_filter"],
+        ["show status function", "iij_seil_show_status_function"],
+        ["show status nat", "iij_seil_show_status_nat"],
+        ["show status ndp", "iij_seil_show_status_ndp"],
+        ["show status ppp", "iij_seil_show_status_ppp"],
+        ["show status resolver", "iij_seil_show_status_resolver"],
+        ["show status route", "iij_seil_show_status_route"],
+        ["show status route6", "iij_seil_show_status_route6"],
+        ["show status vrrp", "iij_seil_show_status_vrrp"],
+        ["show status vrrp3", "iij_seil_show_status_vrrp3"],
+        ["show key", "iij_seil_show_key"],
+        ["show users", "iij_seil_show_users"],
+        ["show system", "iij_seil_show_system"],
     ]
 )
-def test_parse(target):
-    base = os.path.dirname(os.path.abspath(__file__))
-    text_path = os.path.normpath(os.path.join(base, '{s}/{s}.raw'.format(s=target)))
-    correct_path = os.path.normpath(os.path.join(base, '{s}/{s}.json'.format(s=target)))
-    template_path = os.path.normpath(os.path.join(base, '../templates/{s}.template'.format(s=target)))
-    with open(text_path) as f:
-        text = f.read()
+def test_parse(command, dataname):
+    stdout_file = Path(__file__).parent / '{}'.format(dataname) / '{}.raw'.format(dataname)
+    parsed_file = Path(__file__).parent / '{}'.format(dataname) / '{}.json'.format(dataname)
 
-    with open(template_path) as f:
-        t = textfsm.TextFSM(f)
-        pt = t.ParseText(text)
-        parsed_dict = [dict(zip(t.header, l)) for l in pt]
-        correct_dict = json.load(open(correct_path))
-        assert parsed_dict == correct_dict
+    with open(stdout_file) as f:
+        stdout = f.read()
+    with open(parsed_file) as f:
+        correct_dict = json.load(f)
+
+    cli_table = CliTable("index", "templates")
+    cli_table.ParseCmd(stdout, {"Command": command})
+    header = [h.lower() for h in cli_table.header]
+    parsed_dict = [dict(zip(header, line)) for line in cli_table]
+
+    assert parsed_dict == correct_dict
