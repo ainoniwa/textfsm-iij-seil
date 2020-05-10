@@ -4,44 +4,31 @@
 
 TextFSM template for IIJ SEIL series
 
-## Requirements
+## Install
 
-* textfsm
+```bash
+$ pip install git+ssh://git@github.com/ainoniwa/textfsm-iij-seil.git
+```
 
 ## Support commands
 
-* `show key`
-* `show status arp`
-* `show status filter`
-* `show status function`
-* `show status nat`
-* `show status ppp`
-* `show status resolver`
-* `show status route`
-* `show status route6`
-* `show status vrrp`
-* `show status vrrp3`
-* `show system`
-* `show users`
+See the [template index](./textfsm_iij_seil/templates/index)
 
 ## Example
 
 * Useful table viewing tool: `pip install prettytable`
 
 ```
-from textfsm import TextFSM
+from textfsm_iij_seil.parse import parse_output
 from prettytable import PrettyTable
 
-target = "iij_seil_show_status_vrrp"
-
-with open('tests/{s}/{s}.raw'.format(s=target)) as f:
+with open('tests/{s}/{s}.raw'.format(s="iij_seil_show_status_vrrp")) as f:
     text = f.read()
 
-with open('templates/{s}.template'.format(s=target)) as f:
-    t = TextFSM(f)
-    pt = t.ParseText(text)
-    table = PrettyTable(t.header)
-    [table.add_row(l) for l in pt]
+parsed_text = parse_output("show status vrrp", text)
+table = PrettyTable(parsed_text[0].keys())
+for l in parsed_text:
+    table.add_row(l.values())
 
 print(table)
 ```
