@@ -2,7 +2,7 @@
 import json
 import pytest
 from pathlib import Path
-from textfsm.clitable import CliTable
+from textfsm_iij_seil.parse import parse_output
 
 
 @pytest.mark.parametrize(
@@ -26,17 +26,13 @@ from textfsm.clitable import CliTable
     ]
 )
 def test_parse(command, dataname):
-    stdout_file = Path(__file__).parent / '{}'.format(dataname) / '{}.raw'.format(dataname)
-    parsed_file = Path(__file__).parent / '{}'.format(dataname) / '{}.json'.format(dataname)
+    stdout_file = Path(__file__).parent / dataname / '{}.raw'.format(dataname)
+    parsed_file = Path(__file__).parent / dataname / '{}.json'.format(dataname)
 
     with open(stdout_file) as f:
         stdout = f.read()
     with open(parsed_file) as f:
         correct_dict = json.load(f)
 
-    cli_table = CliTable("index", "templates")
-    cli_table.ParseCmd(stdout, {"Command": command})
-    header = [h.lower() for h in cli_table.header]
-    parsed_dict = [dict(zip(header, line)) for line in cli_table]
-
+    parsed_dict = parse_output(command, stdout)
     assert parsed_dict == correct_dict

@@ -1,7 +1,5 @@
 #!/usr/bin/env python
-# coding=utf-8
-
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
     name="textfsm_iij_seil",
@@ -16,7 +14,11 @@ setup(
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3",
         "Topic :: System :: Networking",
     ],
-    packages=['']
+    install_requires=["textfsm"],
+    extras_require={"dev": ["pytest", "tox"]},
+    packages=find_packages(exclude=['tests']),
+    package_data={"textfsm_iij_seil": ["templates/*"]},
 )
