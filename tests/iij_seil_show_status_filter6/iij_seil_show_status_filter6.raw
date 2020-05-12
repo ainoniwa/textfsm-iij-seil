@@ -1,0 +1,12 @@
+page prenat id RULE_1 pass out l2 l3 log on pppoe2 proto udp from fe80::/10 to any port 546-547 script STA count 349
+page prenat id RULE_2 block out l2 l3 log on lan0 proto tcp/udp from any to any port 445 count 0
+page prenat id RULE_3 pass out l2 l3 on lan0 proto any from any to any script STL count 4559
+page prenat id RULE_4 pass out l2 l3 on pppoe2 proto any from any to any script STA count 804897
+page postnat id RULE_5 pass in l2 l3 log on pppoe2 proto udp from fe80::/10 to any port 546-547 script STA count 349
+page postnat id RULE_6 pass in l2 l3 log on lan0 proto ipv6-icmp from any to any count 12513
+page postnat id RULE_7 block in l2 l3 log on pppoe2 proto any from 2001:db8::/64 to 2001:db8::/64 count 2
+page postnat id RULE_8 pass in l2 l3 log on pppoe2 proto ipv6-icmp from any to any script STA count 671
+page dynamic ttl 103/180 id OUTGOING-002f84ec pass out l2 l3 on pppoe2 proto tcp from 2001:db8::100 port 56467 to 2001:db8:4008:c07::10 port 993 option accept-icmperr script UPD,TCP count 429 S=1,SA=0,A=428,F=0,R=0
+page dynamic ttl 103/180 id OUTGOING-002f84ec pass in l2 l3 on pppoe2 proto tcp from 2001:db8:4008:c07::10 port 993 to 2001:db8::100 port 56467 option accept-icmperr script UPD,TCP count 598 S=0,SA=1,A=597,F=0,R=0
+page dynamic ttl 14/15 id OUTGOING-002fa714 pass out l2 l3 on pppoe2 proto udp from 2001:db8::31 port 5207 to 2001:db8:5302:9400::1 port 53 option accept-icmperr script UPD count 1
+page dynamic ttl 14/15 id OUTGOING-002fa714 pass in l2 l3 on pppoe2 proto udp from 2001:db8:5302:9400::1 port 53 to 2001:db8::31 port 5207 option accept-icmperr script UPD count 1

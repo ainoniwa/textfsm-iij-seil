@@ -11,6 +11,7 @@ from textfsm_iij_seil.parse import parse_output
         ["show status arp", "iij_seil_show_status_arp"],
         ["show status dhcp6", "iij_seil_show_status_dhcp6"],
         ["show status filter", "iij_seil_show_status_filter"],
+        ["show status filter6", "iij_seil_show_status_filter6"],
         ["show status function", "iij_seil_show_status_function"],
         ["show status nat", "iij_seil_show_status_nat"],
         ["show status ndp", "iij_seil_show_status_ndp"],

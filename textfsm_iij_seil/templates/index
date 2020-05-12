@@ -14,6 +14,7 @@ iij_seil_show_key.template, .*, seil_fuji, show key
 iij_seil_show_status_arp.template, .*, seil_fuji, show status arp
 iij_seil_show_status_dhcp6.template, .*, seil_fuji, show status dhcp6
 iij_seil_show_status_filter.template, .*, seil_fuji, show status filter
+iij_seil_show_status_filter.template, .*, seil_fuji, show status filter6
 iij_seil_show_status_function.template, .*, seil_fuji, show status function
 iij_seil_show_status_nat.template, .*, seil_fuji, show status nat
 iij_seil_show_status_ndp.template, .*, seil_fuji, show status ndp
