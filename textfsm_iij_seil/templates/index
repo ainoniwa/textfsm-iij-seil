@@ -23,5 +23,6 @@ iij_seil_show_status_route6.template, .*, seil_fuji, show status route6
 iij_seil_show_status_route.template, .*, seil_fuji, show status route
 iij_seil_show_status_vrrp3.template, .*, seil_fuji, show status vrrp3
 iij_seil_show_status_vrrp.template, .*, seil_fuji, show status vrrp
+iij_seil_show_certificate.template, .*, seil_fuji, show certificate
 iij_seil_show_system.template, .*, seil_fuji, show system
 iij_seil_show_users.template, .*, seil_fuji, show users

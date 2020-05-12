@@ -1,0 +1,30 @@
+Value NAME (\S+)
+Value NO (\d+)
+Value SUBJECT_CN (.*)
+Value SUBJECT_O (.*)
+Value SUBJECT_OU (.*)
+Value ISSUER_CN (.*)
+Value ISSUER_O (.*)
+Value ISSUER_OU (.*)
+Value VALIDITY_NOT_BEFORE (.*)
+Value VALIDITY_NOT_AFTER (.*)
+
+Start
+  ^Certficate #${NO} of `${NAME}' -> Cert
+
+Cert
+  ^\s+Subject$$
+  ^\s+Common Name\(CN\)\s+: ${SUBJECT_CN}$$
+  ^\s+Organization Name\(O\)\s+: ${SUBJECT_O}$$
+  ^\s+Organization Unit Name\(OU\)\s+: ${SUBJECT_OU}$$ -> Issuer
+
+Issuer
+  ^\s+Issuer$$
+  ^\s+Common Name\(CN\)\s+: ${ISSUER_CN}$$
+  ^\s+Organization Name\(O\)\s+: ${ISSUER_O}$$
+  ^\s+Organization Unit Name\(OU\)\s+: ${ISSUER_OU}$$ -> Validity
+
+Validity
+  ^\s+Validity$$
+  ^\s+Not Before\s+: ${VALIDITY_NOT_BEFORE}$$
+  ^\s+Not After\s+: ${VALIDITY_NOT_AFTER}$$ -> Record Start

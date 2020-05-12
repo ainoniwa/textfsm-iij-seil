@@ -20,6 +20,7 @@ from textfsm_iij_seil.parse import parse_output
         ["show status route6", "iij_seil_show_status_route6"],
         ["show status vrrp", "iij_seil_show_status_vrrp"],
         ["show status vrrp3", "iij_seil_show_status_vrrp3"],
+        ["show certificate", "iij_seil_show_certificate"],
         ["show key", "iij_seil_show_key"],
         ["show users", "iij_seil_show_users"],
         ["show system", "iij_seil_show_system"],

@@ -1,0 +1,25 @@
+Certficate #1 of `CERT_TEST'
+    Subject
+        Common Name(CN)            : www.example.com
+        Organization Name(O)       : www.example.com
+        Organization Unit Name(OU) : www.example.com
+    Issuer
+        Common Name(CN)            : Let's Encrypt Authority X3
+        Organization Name(O)       : Let's Encrypt
+        Organization Unit Name(OU) : Let's Encrypt
+    Validity
+        Not Before                 : 2019-11-25 15:58:01
+        Not After                  : 2020-02-23 15:58:01
+
+Certficate #2 of `CERT_TEST'
+    Subject
+        Common Name(CN)            : Let's Encrypt Authority X3
+        Organization Name(O)       : Let's Encrypt
+        Organization Unit Name(OU) : Let's Encrypt
+    Issuer
+        Common Name(CN)            : DST Root CA X3
+        Organization Name(O)       : Digital Signature Trust Co.
+        Organization Unit Name(OU) : Digital Signature Trust Co.
+    Validity
+        Not Before                 : 2016-03-17 16:40:46
+        Not After                  : 2021-03-17 16:40:46
